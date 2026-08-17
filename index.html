@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Ben Soeram Ambolodto — Software Developer</title>
+
+  <meta
+    name="description"
+    content="I’m Ben Soeram Ambolodto, a .NET MAUI expert building modern cross-platform apps and full-stack solutions that make an impact. "
+  >
+
+  <link
+    rel="icon"
+    type="image/webp"
+    href="./profile.webp"
+  >
+
+  <!-- Prevent theme flash -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        if (savedTheme === "dark" || (savedTheme !== "light" && prefersDark)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (error) {
+        console.log("Theme storage unavailable.");
+      }
+    })();
+  </script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <header class="sidebar">
+
+      <div class="sidebar-top">
+
+        <button
+          class="mobile-nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="#top" class="brand">
+          Ben Soeram Ambolodto
+        </a>
+
+        <nav
+          class="secondary-nav"
+          aria-label="Secondary navigation"
+        >
+          <ul>
+
+            <li>
+              <a href="#collabs">
+                <span class="nav-icon">○</span>
+                Collabs
+              </a>
+            </li>
+
+            <li>
+              <a href="#consulting">
+                <span class="nav-icon">■</span>
+                Consulting
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <nav
+          class="jump-nav"
+          aria-label="Page sections"
+        >
+          <ul>
+
+            <li>
+              <a href="#projects-section">
+                Projects
+              </a>
+            </li>
+
+            <li>
+              <a href="#experience-section">
+                Experience
+              </a>
+            </li>
+
+            <li>
+              <a href="#stack-section">
+                Stack
+              </a>
+            </li>
+
+            <li>
+              <a href="#github-section">
+                GitHub
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="sidebar-bottom">
+
+        <p class="sidebar-note">
+          For work, collabs &amp; everything else, reach me at
+        </p>
+
+        <address>
+
+          <a href="mailto:hrdevs2018@gmail.com">
+            bensdev932@gmail.com
+          </a>
+
+          <a href="tel:+639457755502">
+            +63 9122329445
+          </a>
+
+        </address>
+
+      </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main id="top">
+
+      <!-- HERO -->
+
+      <section
+        class="hero"
+        aria-labelledby="hero-heading"
+      >
+
+        <div class="hero-photo">
+
+          <img
+            src="./profile.webp"
+            alt="my profile photo"
+          >
+
+        </div>
+
+        <div class="hero-copy">
+
+          <h1 id="hero-heading">
+            Ben Soeram Ambolodto
+          </h1>
+
+          <p>
+            My journey in tech began with 4 years of experience in SEO and web development. Driven by curiosity, I gradually explored programming and discovered a passion for building software beyond the web.
+          </p>
+
+          <p>
+            Today, I’m focused on growing as a Software Developer, with a strong interest in cross-platform development and .NET MAUI. I enjoy learning new technologies, building meaningful projects, and turning ideas into practical software solutions.
+          </p>
+
+          <ul class="social-links">
+
+            <li>
+              <a
+                href="https://github.com/bensdev932"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github ↗
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://ph.linkedin.com/in/ben-soeram-ambolodto-5705b7254"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin ↗
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:bensdev932@gmail.com">
+                email
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <hr class="dotted-divider">
+
+
+      <!-- ================= PROJECTS ================= -->
+
+<section
+  id="projects-section"
+  class="content-section"
+>
+
+  <div class="section-header">
+
+    <h2>
+      <span class="section-number">01</span>
+      — projects
+    </h2>
+
+    <a href="#projects-section">
+      All projects →
+    </a>
+
+  </div>
+
+
+  <div class="project-grid">
+
+    <article class="project-card">
+
+      <p class="project-badge">
+        Cross-Platform Mobile
+      </p>
+
+      <p class="project-tag">
+        .NET MAUI · C# · XAML
+      </p>
+
+      <h3>
+        Modern Mobile Applications
+      </h3>
+
+      <p>
+        Building cross-platform mobile applications with
+        .NET MAUI, focusing on clean UI, navigation,
+        reusable components, and maintainable code.
+      </p>
+
+    </article>
+
+
+    <article class="project-card">
+
+      <p class="project-badge">
+        Application Architecture
+      </p>
+
+      <p class="project-tag">
+        .NET MAUI · MVVM · SQLite
+      </p>
+
+      <h3>
+        Offline-First Applications
+      </h3>
+
+      <p>
+        Developing mobile applications with local data
+        storage, API integration, and offline capabilities
+        designed for reliable everyday use.
+      </p>
+
+    </article>
+
+
+    <article class="project-card">
+
+      <p class="project-badge">
+        Mobile Development
+      </p>
+
+      <p class="project-tag">
+        C# · .NET MAUI · REST APIs
+      </p>
+
+      <h3>
+        Real-World App Projects
+      </h3>
+
+      <p>
+        Turning practical ideas into functional mobile
+        applications, from interface design and data
+        management to testing and deployment.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+      <hr class="dotted-divider">
+
+
+      <!-- ================= EXPERIENCE ================= -->
+
+      <section
+        id="experience-section"
+        class="content-section"
+      >
+
+        <div class="section-header">
+
+          <h2>
+            <span class="section-number">02</span>
+            — experience
+          </h2>
+
+          <a href="#experience-section">
+            Full history →
+          </a>
+
+        </div>
+
+
+        <div class="experience-table-wrapper">
+
+          <table class="experience-table">
+
+            <thead>
+
+              <tr>
+                <th>Dates</th>
+                <th>Role</th>
+                <th>Company</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>2025–2026</td>
+                <td>SEO and Web Developer</td>
+                <td>Atomic Social · Full-time</td>
+              </tr>
+
+              <tr>
+                <td>2023–2025</td>
+                <td>SEO Specialist</td>
+                <td>Blast Pack Digital Marketing · Full-time</td>
+              </tr>
+
+              <tr>
+                <td>2021–2022</td>
+                <td>SEO and Web Developer</td>
+                <td>Rankfortress Digital Marketing · Full-time</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <!-- STACK -->
+
+        <div
+          id="stack-section"
+          class="stack-block"
+        >
+
+          <div class="section-header">
+
+            <h3>
+              Stack
+            </h3>
+
+            <a href="#stack-section">
+              View all →
+            </a>
+
+          </div>
+
+
+          <ul class="tag-list">
+
+            <li>.NET MAUI</li>
+            <li>SQL</li>
+            <li>Android</li>
+            <li>iOS</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Web Development</li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <hr class="dotted-divider">
+
+
+      <!-- ================= COLLABS ================= -->
+
+      <section
+        id="collabs"
+        class="content-section extra-section"
+      >
+
+        <h2>
+          Collabs
+        </h2>
+
+        <p>
+          I'm available for freelance projects,
+          startup collaborations, and long-term
+          remote partnerships.
+        </p>
+
+      </section>
+
+
+      <!-- ================= CONSULTING ================= -->
+
+      <section
+        id="consulting"
+        class="content-section extra-section"
+      >
+
+        <h2>
+          Consulting
+        </h2>
+
+        <p>
+          I help teams modernize Xamarin applications,
+          improve .NET MAUI architecture, and deliver
+          cross-platform solutions.
+        </p>
+
+      </section>
+
+
+      <hr class="dotted-divider">
+
+
+      <!-- ================= GITHUB ================= -->
+
+      <section
+        id="github-section"
+        class="content-section"
+      >
+
+        <div class="section-header">
+
+          <h2>
+            <span class="section-number">04</span>
+            — github
+          </h2>
+
+          <a
+            href="https://github.com/bensdev932/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @bensdev932 ↗
+          </a>
+
+        </div>
+
+
+        <div class="github-chart">
+
+          <img
+            src="https://ghchart.rshah.org/bensdev932"
+            alt="GitHub contribution chart for bensdev932"
+          >
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <p>
+      © 2026 Ben Soeram Ambolodto
+    </p>
+
+  </footer>
+
+
+  <!-- ================= THEME TOGGLE ================= -->
+
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Enable dark mode"
+    aria-pressed="false"
+    title="Enable dark mode"
+  >
+
+    <span
+      id="theme-icon"
+      class="theme-toggle-icon"
+      aria-hidden="true"
+    >
+      ☾
+    </span>
+
+  </button>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
