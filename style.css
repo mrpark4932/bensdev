@@ -581,18 +581,9 @@ main {
 
 .github-chart img {
   display: block;
-
-  /*
-   * Keep the chart at roughly its natural size instead
-   * of stretching it to fill the entire container.
-   */
-  width: 620px;
+  width: 900px;
   max-width: none;
   height: auto;
-
-  /*
-   * Makes the chart monochrome.
-   */
   filter: grayscale(1) contrast(1.25);
 }
 
