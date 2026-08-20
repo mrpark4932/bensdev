@@ -886,7 +886,9 @@ main {
   white-space: nowrap;
   border-right: 2px solid currentColor;
 
-  animation: typing 2.5s steps(19, end) forwards;
+  animation:
+    typing 2.5s steps(19, end) forwards,
+    remove-cursor 0s 2.5s forwards;
 }
 
 @keyframes typing {
@@ -896,5 +898,11 @@ main {
 
   to {
     width: 19ch;
+  }
+}
+
+@keyframes remove-cursor {
+  to {
+    border-right-color: transparent;
   }
 }
