@@ -537,51 +537,85 @@ main {
 }
 
 
-/* =========================================================
+/* ==========================================================================
    GITHUB
-========================================================= */
+   ========================================================================== */
+
+.github-section {
+  width: 100%;
+  padding: 24px 0;
+  color: var(--color-text);
+}
+
+.github-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: #888;
+}
+
+.github-header a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.github-header a:hover {
+  color: #111;
+}
 
 .github-chart {
   width: 100%;
-
-  padding: 20px;
-
-  overflow-x: auto;
-
-  background: var(--surface);
-
-  border: 1px solid var(--border);
-
-  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .github-chart img {
-  width: 100%;
+  display: block;
 
-  min-width: 650px;
-
+  /*
+   * Keep the chart at roughly its natural size instead
+   * of stretching it to fill the entire container.
+   */
+  width: 620px;
+  max-width: none;
   height: auto;
+
+  /*
+   * Makes the chart monochrome.
+   */
+  filter: grayscale(1) contrast(1.25);
 }
 
+/* Mobile */
+@media (max-width: 700px) {
+  .github-section {
+    padding: 20px 0;
+  }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+  .github-chart {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+  }
 
-.site-footer {
-  margin-left: 214px;
+  .github-chart img {
+    width: 620px;
+  }
 
-  padding: 30px;
-
-  text-align: center;
-
-  border-top: 1px solid var(--border);
-
-  color: var(--text-light);
-
-  font-size: 11px;
+  .github-header {
+    font-size: 10px;
+  }
 }
-
 
 /* =========================================================
    DARK MODE BUTTON
